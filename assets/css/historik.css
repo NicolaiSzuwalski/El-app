@@ -1,0 +1,77 @@
+/* Basics */
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --dark: #27282B;
+    --darker: #201E1E;
+    --neonGreen: #55EC20;
+    --light: #EBEBEB;
+}
+
+body{
+    background-color: var(--dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;   
+}
+
+/* Navigation */
+
+nav{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    height: 55px;
+}
+
+#navigation{
+    background-color: var(--darker);
+
+}
+
+nav img{
+    width: 27%;
+    align-self: center;
+    justify-self: center;
+    margin-left: -100px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 1vw;
+    margin: 10px;
+    margin-left: -45px;
+}
+
+nav ul li a{
+    color: #EBEBEB;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-variant: all-small-caps;
+}
+
+
+.active{
+    color: var(--neonGreen);
+}
+
+/* Settings logo */
+
+.settings_logo{
+    display: flex;
+    justify-content: flex-end;
+    margin: 5vw 5vw 0 0;
+}
