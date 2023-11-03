@@ -13,7 +13,7 @@ const historik = document.getElementById("historik");
 const prisLigenu = document.getElementById("prisLigenu");
 
 // fetch function ********************************
-export async function myFetchFunction() {
+async function myFetchFunction() {
     try {
         const response = await fetch(myUpdatedApiUrl);
         if (!response.ok) {
