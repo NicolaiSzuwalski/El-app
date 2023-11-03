@@ -13,7 +13,7 @@ const historik = document.getElementById("historik");
 const prisLigenu = document.getElementById("prisLigenu");
 
 // fetch function ********************************
-async function myFetchFunction() {
+export async function myFetchFunction() {
     try {
         const response = await fetch(myUpdatedApiUrl);
         if (!response.ok) {
@@ -25,7 +25,7 @@ async function myFetchFunction() {
     } catch (error) {
         console.error(error);
     }
-}
+};
 
 // Data conversion function ****************************
 function convertData(data) {
@@ -77,7 +77,6 @@ async function initApp() {
 
 }
 
-// Call the function to initialize the app
 initApp();
 
 
